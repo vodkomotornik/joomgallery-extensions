@@ -14,7 +14,7 @@ A collection of extensions for [JoomGallery](https://www.joomgallery.net/) 4.x (
 |------|------|-------------|
 | Module | **mod_joomgallery_stats** | Gallery statistics module |
 | Plugin | **jg_post_scheduler** | Scheduled publication for images |
-| *(more to come)* | | *8+ extensions planned* |
+
 
 ### Installation
 
@@ -46,7 +46,7 @@ GNU General Public License v3.0 or later
 |-----|----------|----------|
 | Модуль | **mod_joomgallery_stats** | Модуль статистики галереи |
 | Плагин | **jg_post_scheduler** | Отложенная публикация изображений |
-| *(планируется)* | | *8+ расширений в разработке* |
+
 
 ### Установка
 
