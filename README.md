@@ -13,8 +13,9 @@ A collection of extensions for [JoomGallery](https://www.joomgallery.net/) 4.x (
 | Type | Name | Description |
 |------|------|-------------|
 | Module | **mod_joomgallery_stats** | Gallery statistics module |
-| Plugin | **jg_post_scheduler** | Scheduled publication for images |
 | Module | **mod_joomgallery_img_grid** | Modern image grid (analog of JoomImages) |
+| Plugin | **jg_post_scheduler** | Scheduled publication for images |
+| Plugin | **plg_joomgallery_navigationprevnext** | Convenient navigation and mini-gallery for detailed view |
 <details>
 <summary><b>More about JoomGallery Image Grid module (click to expand)</b></summary>
 
@@ -37,6 +38,27 @@ A collection of extensions for [JoomGallery](https://www.joomgallery.net/) 4.x (
 
 **Performance:** No extra JS/CSS loaded, uses Joomla caching and optimized SQL queries. *(+4 unique queries and ±0ms time within margin of error!)*
 
+</details>
+
+<details>
+<summary><b>More about JoomGallery Navigation Prev/Next plugin (click to expand)</b></summary>
+
+The plugin adds convenient navigation between images in the JoomGallery 4 detailed view.
+
+**Features:**
+* **Previous / Next** image buttons
+* Mini-gallery with thumbnails (configurable quantity)
+* Thumbnail size setting (from 50 to 200px)
+* Counter display (current position / total)
+* Show/hide image titles
+* Support for anchors `#image-title` for smooth navigation
+* Option to display arrows in the mini-gallery
+* DEBUG mode for troubleshooting
+* Full compatibility with Joomla 5/6 and JoomGallery 4.x
+* Update notification
+
+**Requirements:**
+You need to create a template override — copy the file from the archive folder `/plugins/joomgallery/navigationprevnext/template-override/default.php` to your template here: `/templates/YOUR_TEMPLATE/html/com_joomgallery/image/default.php`
 </details>
 
 ### Installation
@@ -68,8 +90,10 @@ GNU General Public License v3.0 or later
 | Тип | Название | Описание |
 |-----|----------|----------|
 | Модуль | **mod_joomgallery_stats** | Модуль статистики галереи |
+| Модуль | **mod_joomgallery_img_grid** | Модуль image grid вывод превью (аналог JoomImages) |
 | Плагин | **jg_post_scheduler** | Отложенная публикация изображений |
-| Модуль | **mod_joomgallery_img_grid** | Современный модуль для отображения сетки изображений (аналог JoomImages) |
+| Плагин | **plg_joomgallery_navigationprevnext** | Удобная навигация и мини-галерея для детального просмотра |
+
 <details>
 <summary><b>Подробнее о модуле JoomGallery Image Grid (нажмите, чтобы развернуть)</b></summary>
 
@@ -92,6 +116,27 @@ GNU General Public License v3.0 or later
 
 **Производительность:** Модуль не загружает дополнительные JS/CSS, использует кэширование Joomla и оптимизированные SQL-запросы. *(+4 уникальных запроса и ±0ms времени на уровне погрешности!)*
 
+</details>
+
+<details>
+<summary><b>Подробнее о плагине навигации (нажмите, чтобы развернуть)</b></summary>
+
+Плагин добавляет удобную навигацию между изображениями в детальном просмотре JoomGallery 4.
+
+**Возможности:**
+* Кнопки **Предыдущее / Следующее** изображение
+* Мини-галерея с превью (настраиваемое количество)
+* Настройка размера превью (от 50 до 200px)
+* Отображение счетчика (текущая позиция / всего)
+* Показывать/скрывать названия изображений
+* Поддержка якорей `#image-title` для плавной навигации
+* Опция отображения стрелок в мини-галерее
+* DEBUG-режим для отладки
+* Полная совместимость с Joomla 5/6 и JoomGallery 4.x
+* Информирование о выходе новой версии
+
+**Требования:**
+Необходимо создать переопределение шаблона — скопируйте файл из папки архива `/plugins/joomgallery/navigationprevnext/template-override/default.php` в ваш шаблон сюда: `/templates/ВАШ_ШАБЛОН/html/com_joomgallery/image/default.php`
 </details>
 
 ### Установка
